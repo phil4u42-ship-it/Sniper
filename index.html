@@ -83,7 +83,7 @@ label{font-size:11px;color:var(--muted)}
 window.onerror=(m,s,l)=>{var d=document.getElementById('diag');if(d)d.textContent='ERR '+m+' @line '+l;return true;};
 window.onunhandledrejection=e=>{var d=document.getElementById('diag');if(d)d.textContent='REJECT '+(e.reason&&e.reason.message||e.reason);};
 const $=i=>document.getElementById(i),grid=$('grid'),posEl=$('pos'),diag=$('diag'),dot=$('dot'),pill=$('pill'),logEl=$('log');
-const SOL='So11111111111111111111111111111111111111112',JUP='https://api.jup.ag/swap/v1';
+const SOL='So11111111111111111111111111111111111111112',JUP='https://lite-api.jup.ag/swap/v1';
 const AL='123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 function b58d(s){const b=[0];for(const ch of s){let c=AL.indexOf(ch);if(c<0)throw new Error('bad char');let carry=c;
 for(let j=0;j<b.length;j++){carry+=b[j]*58;b[j]=carry&255;carry>>=8;}
